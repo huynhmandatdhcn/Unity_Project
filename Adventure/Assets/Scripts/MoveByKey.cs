@@ -21,6 +21,7 @@ public class MoveByKey : MonoBehaviour
     private void UpdateRunning()
     {
         var xInput = Input.GetAxis("Horizontal");
+        Debug.Log(xInput);
         var newVelocity = rigid.velocity;
         newVelocity.x = xInput * runSpeed;
         rigid.velocity = newVelocity;
